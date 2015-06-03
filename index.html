@@ -34,13 +34,13 @@
 <body>
   <!-- javascript sdk for facebook feed -->
   <div id="fb-root"></div>
-  <script>(function(d, s, id) {
+<script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3";
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=799801240097759";
   fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
   <img class="img-responsive" src="img/TFMbanner.png" alt="">
@@ -107,17 +107,19 @@
                         <strong>Social Media</strong>
                     </h2>
                     <hr>
+                </div>
                     <!-- twitter feed -->
-                    <a class="col-md-6 twitter-timeline" href="https://twitter.com/Trinity_FM" data-widget-id="604998282251763712" data-chrome="noborders transparent">Tweets by @Trinity_FM</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                    <!-- /twitter feed -->
-
-                    <!-- facebook feed -->
-                    <div class="col-md-6 fb-page" data-href="https://www.facebook.com/TrinityFMDublin" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/TrinityFMDublin"><a href="https://www.facebook.com/TrinityFMDublin">Trinity FM</a></blockquote></div></div>
+                    <div class="col-md-6"> 
+                        <div class="twitter-timeline" href="https://twitter.com/Trinity_FM" data-widget-id="604998282251763712" data-chrome="noborders transparent">Tweets by @Trinity_FM</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fb-page" data-href="https://www.facebook.com/TrinityFMDublin" data-width="500" data-hide-cover="false" data-show-facepile="false" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/TrinityFMDublin"><a href="https://www.facebook.com/TrinityFMDublin">Trinity FM</a></blockquote></div></div>
+                    </div>
+                   
                     <!-- /facebook feed -->
 
                     <hr class="visible-xs">
-                </div>
             </div>
         </div>
 
