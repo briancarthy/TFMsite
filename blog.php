@@ -100,7 +100,7 @@ require('wp-blog-header.php');
                     <div class="col-lg-8">
 		    <!-- livestream event -->
             <?php
-            $posts = get_posts('category=1&numberposts=10');
+            $posts = get_posts('category=3&numberposts=10');
             foreach ($posts as $post) : setup_postdata( $post ); ?>
             <h3>
             <?php the_title(); ?>
