@@ -3,7 +3,6 @@
 require('wp-blog-header.php');
 ?>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
@@ -12,7 +11,7 @@ require('wp-blog-header.php');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Trinity FM</title>
+    <title>About - Trinity FM</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/Radio.ico" />
 
     <!-- Bootstrap Core CSS -->
@@ -35,19 +34,9 @@ require('wp-blog-header.php');
 </head>
 
 <body>
-  <!-- javascript sdk for facebook feed -->
-  <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=799801240097759";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
-
-  <img class="img-responsive" src="img/TFMbanner.png" alt="">
-  <div class="address-bar">Trinity College's very own student-run radio society.</div>
+    <img class="img-responsive" src="img/TFMbanner.png" alt="">
+    <div class="address-bar">Trinity College's very own student-run radio society.</div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
@@ -70,7 +59,7 @@ require('wp-blog-header.php');
                         <a href="index.html">Tune in</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="about.php">About</a>
                     </li>
                     <li>
                       <a href="timetables.html">Timetable</a>
@@ -91,35 +80,48 @@ require('wp-blog-header.php');
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Read our
-                        <strong>Blog</strong>
+                    <h2 class="intro-text text-center">About
+                        <strong>Trinity FM</strong>
                     </h2>
                     <hr>
-                    <div class="col-lg-2">
-                    </div>
-                    <div class="col-lg-8">
-		    <!-- livestream event -->
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/logoWide.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <p>Trinity FM is Trinity College Dublin's student-run radio station/radio society.</p>
+                    <p>We broadcast Mon-Fri, 3pm-Midnight during the college year and from 11am during Broadcast Weeks.</p>
+                    <p>We are located in room 6.38 on the top floor of Mandela House (House 6).</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="row">
             <?php
-            $posts = get_posts('category=1&numberposts=10');
+            $posts = get_posts('category=2&numberposts=10');
             foreach ($posts as $post) : setup_postdata( $post ); ?>
-            <h3>
-            <?php the_title(); ?>
-            </h3>
             <?php the_content(); ?>
             <?php the_date(); echo "<br />"; ?>
             <?php
             endforeach;
-            ?>                    <!-- /livestream event -->
+            ?>
+        </div>
 
-</div>
-                    <div class="col-lg-2">
-                    </div>
+
+    </div>
+    <!-- /.container -->
+<!--
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Trinity FM 2015</p>
                 </div>
             </div>
         </div>
-
-    </div>
-
+    </footer>
+-->
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
