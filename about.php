@@ -62,7 +62,7 @@ require('wp-blog-header.php');
                         <a href="about.php">About</a>
                     </li>
                     <li>
-                      <a href="timetables.html">Timetable</a>
+                      <a href="timetables.php">Timetable</a>
                     </li>
                     <li>
                       <a href="blog.php">Blog</a>

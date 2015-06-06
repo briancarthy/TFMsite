@@ -12,7 +12,7 @@ require('wp-blog-header.php');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Trinity FM</title>
+    <title>Timetable - Trinity FM</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/Radio.ico" />
 
     <!-- Bootstrap Core CSS -->
@@ -35,19 +35,9 @@ require('wp-blog-header.php');
 </head>
 
 <body>
-  <!-- javascript sdk for facebook feed -->
-  <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=799801240097759";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
-
-  <img class="img-responsive" src="img/TFMbanner.png" alt="">
-  <div class="address-bar">Trinity College's very own student-run radio society.</div>
+    <img class="img-responsive" src="img/TFMbanner.png" alt="">
+    <div class="address-bar">Trinity College's very own student-run radio society.</div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
@@ -73,10 +63,10 @@ require('wp-blog-header.php');
                         <a href="about.php">About</a>
                     </li>
                     <li>
-                      <a href="timetables.php">Timetable</a>
+                        <a href="timetables.php">Timetable</a>
                     </li>
                     <li>
-                      <a href="blog.php">Blog</a>
+                        <a href="blog.php">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -91,34 +81,42 @@ require('wp-blog-header.php');
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Read our
-                        <strong>Blog</strong>
+                    <h2 class="intro-text text-center">Show
+                        <strong>Timetable</strong>
                     </h2>
                     <hr>
-                    <div class="col-lg-2">
-                    </div>
-                    <div class="col-lg-8">
-		    <!-- livestream event -->
-            <?php
-            $posts = get_posts('category=3&numberposts=10');
-            foreach ($posts as $post) : setup_postdata( $post ); ?>
-            <h3>
-            <?php the_title(); ?>
-            </h3>
-            <?php the_content(); ?>
-            <?php the_date(); echo "<br />"; ?>
-            <?php
-            endforeach;
-            ?>                    <!-- /livestream event -->
-
-</div>
-                    <div class="col-lg-2">
-                    </div>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <?php
+                    $posts = get_posts('category=4&numberposts=10');
+                    foreach ($posts as $post) : setup_postdata( $post ); ?>
+                    <?php the_content(); ?>
+                    <h2>
+                    <?php the_title(); echo "<br />"; ?>
+                </h2>
+                    <?php
+                    endforeach;
+                    ?>
+                </div>
+            </div>
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Show
+                        <strong>Applications</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <p>To apply for a show simply contact the Station Manager at <a href="mailto:stationmanager.trinityfm@gmail.com" style="color: #b80000">stationmanager.trinityfm@gmail.com</a>.</p>
+                    <p>In your email simply give your name, the name of your proposed show, what timeslot you'd prefer and a brief description of the content of your show.</p>
+                    <p>Timeslots are given out on a first come first served basis.</p>
                 </div>
             </div>
         </div>
 
     </div>
+    <!-- /.container -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
