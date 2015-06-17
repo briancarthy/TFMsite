@@ -36,7 +36,7 @@ require('wp-blog-header.php');
 
 <body>
 
-    <img class="img-responsive" src="img/TFMbanner.png" alt="">
+    <img class="address-bar img-responsive" src="img/TFMbanner.png" alt="">
     <div class="address-bar">Trinity College's very own student-run radio society.</div>
 
     <!-- Navigation -->
@@ -51,7 +51,7 @@ require('wp-blog-header.php');
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">TrinityFM</a>
+                <a class="navbar-brand" href="index.html">Trinity FM</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
