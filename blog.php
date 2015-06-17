@@ -46,7 +46,7 @@ require('wp-blog-header.php');
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-  <img class="img-responsive" src="img/TFMbanner.png" alt="">
+  <img class="address-bar img-responsive" src="img/TFMbanner.png" alt="">
   <div class="address-bar">Trinity College's very own student-run radio society.</div>
 
     <!-- Navigation -->
