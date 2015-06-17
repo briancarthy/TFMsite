@@ -12,7 +12,7 @@ require('wp-blog-header.php');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Trinity FM</title>
+    <title>Blog - Trinity FM</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/Radio.ico" />
 
     <!-- Bootstrap Core CSS -->
