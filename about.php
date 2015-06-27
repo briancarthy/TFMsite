@@ -99,7 +99,7 @@ require('wp-blog-header.php');
 
         <div class="row">
             <?php
-            $posts = get_posts('category=2&numberposts=10');
+            $posts = get_posts('category=4&numberposts=10');
             foreach ($posts as $post) : setup_postdata( $post ); ?>
             <?php the_content(); ?>
             <?php the_date(); echo "<br />"; ?>
