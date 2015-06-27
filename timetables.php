@@ -88,7 +88,7 @@ require('wp-blog-header.php');
                 </div>
                 <div class="col-lg-12 text-center">
                     <?php
-                    $posts = get_posts('category=4&numberposts=10');
+                    $posts = get_posts('category=3&numberposts=10');
                     foreach ($posts as $post) : setup_postdata( $post ); ?>
                     <?php the_content(); ?>
                     <h2>
