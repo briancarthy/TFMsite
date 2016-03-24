@@ -35,6 +35,17 @@ require('wp-blog-header.php');
 
 <body>
 
+  <!--Google analytics-->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-67887332-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+
     <img class="address-bar img-responsive" src="img/TFMbanner.png" alt="">
     <div class="address-bar">Trinity College's very own student-run radio society.</div>
 
@@ -63,9 +74,6 @@ require('wp-blog-header.php');
                     </li>
                     <li>
                       <a href="timetables.php">Timetable</a>
-                    </li>
-                    <li>
-                      <a href="blog.php">Blog</a>
                     </li>
                 </ul>
             </div>
